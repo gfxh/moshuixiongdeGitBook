@@ -1,112 +1,36 @@
-![Build Status](https://gitlab.com/pages/gitbook/badges/master/build.svg)
+# Gitbook 使用入门
 
----
+> GitBook 是一个基于 Node.js 的命令行工具，可使用 Github/Git 和 Markdown 来制作精美的电子书。
 
-Example [GitBook] website using GitLab Pages.
+本书将简单介绍如何安装、编写、生成、发布一本在线图书。
+# 我的条件
+我是三江学院的一名新生（2025），一个民办的二本院校。我的评价是 ** 学费死贵.现在后悔已不及。为此我要另寻出路
+目前我什么都不会
+python基础没学完(免费)
+现在又要重新学java（1.6W） 。我觉得 钱已经花了，也就四年时间。如果我能在大一学完并掌握P2-P4，我就可以去公司参加实习。
 
-Learn more about GitLab Pages at https://pages.gitlab.io and the official
-documentation https://docs.gitlab.com/ce/user/project/pages/.
 
----
+# 我的思想转变
+从前我想成为一名黑客，觉得很帅，很厉害。为此我坚定目标至现在。
+当我即将踏入网安行业时，我听到很多前辈的建议。我知道了网安只有那种互联网的龙头或一线企业才有需求。
+对于一个小型企业来说，维护一个服务器的成本太高了。花点钱去租用服务器花销是小的。也就是说 一个连服务器都没有的小企业 完全没必要招专业的网安的工程师
+所以要想从事网安工作，要么有很强的实力 去大厂。要么就转行干别的。
+我不想放弃我这个小小的梦想（成为网络安全专家），但是现有条件还不足以支撑。
+家境也不是非常好(至少父母健在，不为生活难倒)，从开学到现在 已经有5W砸在我身上。心里总不是滋味。
+老爸无条件支持我的各种抉择。一个劲的鼓励我向前。说实在的如果真的没有....，我真就是无颜面见父母
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+# 路径
+我现在想的是
+第一条线：暂且跟着学校老师走，完成基本的毕业条件。
+第二条线：学习这1.6w的课程，在大一完成p4，跟着学长做项目，积攒实习经验。
+第三条线：摸索比赛  竞技  ctf等等
+（9/28）目前就这三条想法。但是第三条线不急
 
-- [GitLab CI](#gitlab-ci)
-- [Building locally](#building-locally)
-- [GitLab User or Group Pages](#gitlab-user-or-group-pages)
-- [Did you fork this project?](#did-you-fork-this-project)
-- [Troubleshooting](#troubleshooting)
+# 想法
+就是 想办法有独立的能力（活着）。稳定之后在攻入全职网安。
+对于怎么独立（活着），跟着何学长 做项目 积攒经验。哪怕工作是软件工程。（9/28）
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## GitLab CI
 
-This project's static Pages are built by [GitLab CI][ci], following the steps
-defined in [`.gitlab-ci.yml`](.gitlab-ci.yml):
 
-```yaml
-# requiring the environment of NodeJS 10
-image: node:10
 
-# add 'node_modules' to cache for speeding up builds
-cache:
-  paths:
-    - node_modules/ # Node modules and dependencies
-
-before_script:
-  - npm install gitbook-cli -g # install gitbook
-  - gitbook fetch 3.2.3 # fetch final stable version
-  - gitbook install # add any requested plugins in book.json
-
-test:
-  stage: test
-  script:
-    - gitbook build . public # build to public path
-  only:
-    - branches # this job will affect every branch except 'master'
-  except:
-    - master
-    
-# the 'pages' job will deploy and build your site to the 'public' path
-pages:
-  stage: deploy
-  script:
-    - gitbook build . public # build to public path
-  artifacts:
-    paths:
-      - public
-    expire_in: 1 week
-  only:
-    - master # this job will affect only the 'master' branch
-```
-
-## Building locally
-
-To work locally with this project, you'll have to follow the steps below:
-
-1. Fork, clone or download this project
-1. [Install][] GitBook `npm install gitbook-cli -g`
-1. Fetch GitBook's latest stable version `gitbook fetch latest`
-1. Preview your project: `gitbook serve`
-1. Add content
-1. Generate the website: `gitbook build` (optional)
-1. Push your changes to the master branch: `git push`
-
-Read more at GitBook's [documentation][].
-
-## GitLab User or Group Pages
-
-To use this project as your user/group website, you will need one additional
-step: just rename your project to `namespace.gitlab.io`, where `namespace` is
-your `username` or `groupname`. This can be done by navigating to your
-project's **Settings**.
-
-Read more about [user/group Pages][userpages] and [project Pages][projpages].
-
-## Did you fork this project?
-
-If you forked this project for your own use, please go to your project's
-**Settings** and remove the forking relationship, which won't be necessary
-unless you want to contribute back to the upstream project.
-
-## Troubleshooting
-
-1. CSS is missing! That means two things:
-
-    Either that you have wrongly set up the CSS URL in your templates, or
-    your static generator has a configuration option that needs to be explicitly
-    set in order to serve static assets under a relative URL.
-
-----
-
-Forked from @virtuacreative
-
-[ci]: https://about.gitlab.com/gitlab-ci/
-[GitBook]: https://www.gitbook.com/
-[host the book]: https://gitlab.com/pages/gitbook/tree/pages
-[install]: http://toolchain.gitbook.com/setup.html
-[documentation]: http://toolchain.gitbook.com
-[userpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#user-or-group-pages
-[projpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#project-pages
