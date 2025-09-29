@@ -42,8 +42,26 @@
     1. 五点
 
 
+# 代码块
+
+* 行内代码
+
+`行内代码`
+`DWFAFUVDYAVUIASU`
 
 
+
+
+* 行间代码
+```
+WDASWDAS
+DIW666
+54646
+66516
+FWFWFSA
+WFAF
+
+```
 
 
 
