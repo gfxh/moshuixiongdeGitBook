@@ -52,14 +52,11 @@
 
 
 * 行间代码
-```
-WDASWDAS
-DIW666
-54646
-66516
-FWFWFSA
-WFAF
 
+
+```
+ZHE SHI DAI MA NEI RONG
+print("你好啊")
 ```
 
 
