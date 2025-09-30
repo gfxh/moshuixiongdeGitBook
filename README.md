@@ -1,5 +1,4 @@
-# 这是一个来自墨水熊的Gitbook 🐻
-
+# 这是一个来自    *墨水熊🐻*    的Gitbook 
 > GitBook 是一个基于 Node.js 的命令行工具，可使用 Github/Git 和 Markdown 来制作精美的电子书。
 
 这里将记录 他的学习经历
