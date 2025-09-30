@@ -37,12 +37,12 @@ ssh-keygen -t rsa -b 4096 -C "XXXXXXXXX@XXX.com"
 cat ~/.ssh/id_rsa.pub
 ```
 输好命令回车后，可以看到很长的、以 “ssh-rsa” 开头、以你自己邮箱结尾的字符内容，这就是 ssh 了：
-
+![](照片文件夹/ssh1.png)
 
 这个很长的 ssh 看不懂没关系，不用纠结（本来就不是给人看的，是计算机识别的）。
 
 复制 SSH ，下面的步骤会用到。复制的区域为：
-
+![](照片文件夹/sshfuzhi.png)
 
 
 
