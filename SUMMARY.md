@@ -1,6 +1,6 @@
 * [介绍](README.md)
 * [markdown基础语法练习](exercise.md)
-   * [Java变量](java/val.md)
+   * [git的学习](git学习.md)
    * [Java数据类型](java/dataType.md)
 * [Java 运算符](operator/README.md)
    * [算术运算符](operator/arithmetic.md)
