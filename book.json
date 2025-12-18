@@ -1,0 +1,25 @@
+
+{
+  
+  "plugins": [              
+    "enhanced-tables",      
+    "styles-less"           
+  ],
+  "pluginsConfig": {         
+    "enhanced-tables": {
+      "enabled": true       
+    },
+    "styles-less": {
+      "styles": {
+        "website": "styles/website.css"  
+      }
+    },
+    "theme-default": {
+      "showLevel": false
+    }
+  }
+}
+
+
+  
+
